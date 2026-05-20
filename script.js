@@ -12,9 +12,9 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // Nav móvil
-  var navToggle = $('.nav-toggle');
-  var primaryNav = $('#primary-nav');
-  var siteHeader = $('#siteHeader');
+  var navToggle = $('#burger');
+  var primaryNav = $('#nav');
+  var siteHeader = $('#hdr');
 
   if (navToggle && primaryNav) {
     navToggle.addEventListener('click', function () {
@@ -24,7 +24,7 @@
       if (siteHeader) siteHeader.classList.toggle('nav-open', !isOpen);
       document.body.style.overflow = !isOpen ? 'hidden' : '';
     });
-    $$('.primary-nav a').forEach(function (link) {
+    $$('#nav a').forEach(function (link) {
       link.addEventListener('click', function () {
         navToggle.setAttribute('aria-expanded', 'false');
         primaryNav.classList.remove('open');
@@ -32,6 +32,14 @@
         document.body.style.overflow = '';
       });
     });
+  }
+
+  // Hero line reveal (al cargar)
+  var heroLines = $$('.reveal-line');
+  if (heroLines.length) {
+    setTimeout(function () {
+      heroLines.forEach(function (l) { l.classList.add('in'); });
+    }, 150);
   }
 
   // Reveal on scroll
@@ -62,7 +70,7 @@
     if (type) formStatus.classList.add(type);
   }
   function markError(field, has) {
-    var w = field.closest('.form-field');
+    var w = field.closest('.fld');
     if (w) w.classList.toggle('error', has);
   }
   function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); }
@@ -86,7 +94,7 @@
   if (form) {
     $$('input, select, textarea', form).forEach(function (field) {
       field.addEventListener('input', function () {
-        var w = field.closest('.form-field');
+        var w = field.closest('.fld');
         if (w && w.classList.contains('error')) w.classList.remove('error');
       });
     });
@@ -99,7 +107,7 @@
       if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
       setStatus('Enviando…');
       setTimeout(function () {
-        setStatus('¡Recibido! Te respondemos en menos de 24 horas.', 'success');
+        setStatus('Consulta enviada. Respondemos en menos de 24 horas.', 'success');
         form.reset();
         if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
       }, 1200);

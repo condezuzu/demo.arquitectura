@@ -1,471 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estudio Terreno — Arquitectura &amp; Diseño · Montevideo</title>
-  <meta name="description" content="Estudio de arquitectura y diseño de interiores en Montevideo. Diseñamos espacios con materiales nobles, luz natural y una mirada artesanal. Reformas, obra nueva y diseño integral." />
-  <meta name="theme-color" content="#1C1814" />
-  <link rel="canonical" href="https://estudioterreno.uy/" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OBRA — Estudio de Arquitectura · Montevideo</title>
+<meta name="description" content="Estudio de arquitectura en Montevideo. Diseño residencial, reformas y dirección de obra. Espacios sobrios, materiales honestos." />
+<meta name="theme-color" content="#15110C" />
+<link rel="canonical" href="https://obra.uy/" />
+<meta property="og:title" content="OBRA — Estudio de Arquitectura" />
+<meta property="og:description" content="Estudio de arquitectura en Montevideo. Espacios sobrios, materiales honestos." />
+<meta property="og:type" content="website" />
 
-  <meta property="og:title" content="Estudio Terreno — Arquitectura &amp; Diseño" />
-  <meta property="og:description" content="Diseñamos espacios con materiales nobles, luz natural y mirada artesanal. Montevideo, Uruguay." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_UY" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- Archivo: grotesque suiza neutra. NADA de serif. -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Archivo+Narrow:wght@400;500;600&amp;display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2315110C'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='%23EDE6D8' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E" />
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231C1814'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23C97B4A' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E" />
-
-  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <a href="#main" class="skip-link">Saltar al contenido</a>
+<a href="#main" class="skip">Saltar al contenido</a>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header" id="siteHeader">
-    <div class="container nav">
-      <a href="#hero" class="brand" aria-label="Estudio Terreno — inicio">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="36" height="36" fill="none">
-            <rect x="2" y="2" width="36" height="36" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M2 26 L20 14 L38 26" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M20 14 L20 2" stroke="currentColor" stroke-width="1.2"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <span class="brand-name">Estudio</span>
-          <span class="brand-name brand-accent">Terreno</span>
-        </span>
-      </a>
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="hdr-row">
+    <a href="#top" class="logo">OBRA<span>®</span></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#proyectos"><span class="nav-idx">01</span> Proyectos</a>
+      <a href="#estudio"><span class="nav-idx">02</span> Estudio</a>
+      <a href="#servicios"><span class="nav-idx">03</span> Servicios</a>
+      <a href="#contacto"><span class="nav-idx">04</span> Contacto</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
 
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-      </button>
+<main id="main">
 
-      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#estudio">Estudio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#proceso">Proceso</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="hero">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <p class="hero-eyebrow reveal">Arquitectura &amp; Diseño · Montevideo</p>
-          <h1 class="hero-title reveal" data-delay="100">
-            <span class="line">Más diseño,</span>
-            <span class="line"><em>menos ruido</em>.</span>
-          </h1>
-          <p class="hero-sub reveal" data-delay="250">
-            Diseñamos espacios para vivir, no para mostrar. Materiales nobles,
-            luz natural y una mirada artesanal en cada rincón de la casa.
-          </p>
-          <div class="hero-cta reveal" data-delay="350">
-            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contacto" class="btn btn-ghost">Conversemos tu obra</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" data-delay="200">
-          <div class="hero-frame">
-            <div class="ph ph-hero" data-label="Proyecto destacado">
-              <span class="ph-tag">[ IMAGEN — Proyecto destacado ]</span>
-            </div>
-          </div>
-          <div class="hero-caption">
-            <span class="hero-caption-num">01 / 24</span>
-            <span class="hero-caption-text">Casa Solymar · Reforma integral</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Obra nueva</span><span>·</span>
-          <span>Reformas</span><span>·</span>
-          <span>Diseño de interiores</span><span>·</span>
-          <span>Dirección de obra</span><span>·</span>
-          <span>Mobiliario a medida</span><span>·</span>
-          <span>Obra nueva</span><span>·</span>
-          <span>Reformas</span><span>·</span>
-          <span>Diseño de interiores</span><span>·</span>
-          <span>Dirección de obra</span><span>·</span>
-          <span>Mobiliario a medida</span><span>·</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ MANIFIESTO ============ -->
-    <section class="manifiesto">
-      <div class="container">
-        <p class="manifiesto-text reveal">
-          Durante años, el buen diseño estuvo reservado a unos pocos.
-          <em>Nuestro trabajo es cambiar eso</em>: llevar arquitectura honesta,
-          cálida y bien pensada a cada hogar — sin importar su tamaño ni su presupuesto.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ PROYECTOS ============ -->
-    <section class="proyectos" id="proyectos">
-      <div class="container">
-        <header class="section-head reveal">
-          <div>
-            <p class="section-tag">— Proyectos</p>
-            <h2 class="section-title">Obras <em>recientes</em>.</h2>
-          </div>
-          <p class="section-sub">
-            Una selección de espacios que diseñamos y construimos. Cada proyecto
-            empieza con una pregunta: ¿cómo se vive realmente este lugar?
-          </p>
-        </header>
-
-        <div class="proyectos-grid">
-
-          <article class="proyecto proyecto-lg reveal">
-            <a href="#" class="proyecto-link">
-              <div class="ph ph-proyecto" data-ratio="wide">
-                <span class="ph-tag">[ IMAGEN — Cocina Solymar ]</span>
-              </div>
-              <div class="proyecto-info">
-                <div class="proyecto-meta">
-                  <span class="proyecto-cat">Reforma integral</span>
-                  <span class="proyecto-year">2024</span>
-                </div>
-                <h3 class="proyecto-title">Cocina Solymar</h3>
-                <p class="proyecto-desc">Reforma completa de cocina con isla central, roble natural y luz cenital.</p>
-                <span class="proyecto-arrow" aria-hidden="true">Ver proyecto →</span>
-              </div>
-            </a>
-          </article>
-
-          <article class="proyecto reveal" data-delay="100">
-            <a href="#" class="proyecto-link">
-              <div class="ph ph-proyecto" data-ratio="tall">
-                <span class="ph-tag">[ IMAGEN — Baño Carrasco ]</span>
-              </div>
-              <div class="proyecto-info">
-                <div class="proyecto-meta">
-                  <span class="proyecto-cat">Reforma</span>
-                  <span class="proyecto-year">2024</span>
-                </div>
-                <h3 class="proyecto-title">Baño Carrasco</h3>
-                <p class="proyecto-desc">Microcemento, nichos embutidos y grifería en bronce envejecido.</p>
-                <span class="proyecto-arrow" aria-hidden="true">Ver proyecto →</span>
-              </div>
-            </a>
-          </article>
-
-          <article class="proyecto reveal" data-delay="200">
-            <a href="#" class="proyecto-link">
-              <div class="ph ph-proyecto" data-ratio="tall">
-                <span class="ph-tag">[ IMAGEN — Loft Ciudad Vieja ]</span>
-              </div>
-              <div class="proyecto-info">
-                <div class="proyecto-meta">
-                  <span class="proyecto-cat">Diseño integral</span>
-                  <span class="proyecto-year">2023</span>
-                </div>
-                <h3 class="proyecto-title">Loft Ciudad Vieja</h3>
-                <p class="proyecto-desc">Recuperación de un padrón antiguo respetando sus muros originales.</p>
-                <span class="proyecto-arrow" aria-hidden="true">Ver proyecto →</span>
-              </div>
-            </a>
-          </article>
-
-          <article class="proyecto proyecto-lg reveal" data-delay="100">
-            <a href="#" class="proyecto-link">
-              <div class="ph ph-proyecto" data-ratio="wide">
-                <span class="ph-tag">[ IMAGEN — Casa Pinar ]</span>
-              </div>
-              <div class="proyecto-info">
-                <div class="proyecto-meta">
-                  <span class="proyecto-cat">Obra nueva</span>
-                  <span class="proyecto-year">2023</span>
-                </div>
-                <h3 class="proyecto-title">Casa Pinar</h3>
-                <p class="proyecto-desc">Vivienda unifamiliar de 140m² pensada alrededor de un patio central.</p>
-                <span class="proyecto-arrow" aria-hidden="true">Ver proyecto →</span>
-              </div>
-            </a>
-          </article>
-
-        </div>
-
-        <div class="proyectos-foot reveal">
-          <a href="#" class="link-underline">Ver portfolio completo →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ESTUDIO ============ -->
-    <section class="estudio" id="estudio">
-      <div class="container estudio-grid">
-        <div class="estudio-visual reveal">
-          <div class="ph ph-estudio" data-ratio="portrait">
-            <span class="ph-tag">[ IMAGEN — El equipo / el estudio ]</span>
-          </div>
-        </div>
-        <div class="estudio-text reveal" data-delay="150">
-          <p class="section-tag">— El estudio</p>
-          <h2 class="section-title">Diseño honesto, <em>sin poses</em>.</h2>
-          <p class="lead">
-            Somos un estudio joven de arquitectura y diseño con base en Montevideo.
-            Creemos en los materiales que envejecen bien, en la luz natural como
-            primer material, y en escuchar antes de proponer.
-          </p>
-          <p>
-            Trabajamos de forma integral: desde la primera idea hasta la última
-            terminación. Coordinamos cada gremio para que vos no tengas que perseguir
-            a nadie — y para que el resultado sea exactamente lo que imaginamos juntos.
-          </p>
-
-          <div class="estudio-stats">
-            <div class="stat">
-              <span class="stat-num">+40</span>
-              <span class="stat-label">obras entregadas</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">8</span>
-              <span class="stat-label">años de oficio</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">100%</span>
-              <span class="stat-label">dirección propia</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SERVICIOS ============ -->
-    <section class="servicios" id="servicios">
-      <div class="container">
-        <header class="section-head reveal">
-          <div>
-            <p class="section-tag">— Servicios</p>
-            <h2 class="section-title">Qué <em>hacemos</em>.</h2>
-          </div>
-          <p class="section-sub">
-            Un servicio integral, de principio a fin. Para que el diseño y la obra
-            sean una sola conversación, no dos problemas separados.
-          </p>
-        </header>
-
-        <div class="servicios-list">
-          <article class="servicio reveal">
-            <span class="servicio-num">01</span>
-            <div class="servicio-body">
-              <h3>Obra nueva</h3>
-              <p>Diseño y construcción de viviendas desde cero. Proyecto, permisos, dirección de obra y entrega llave en mano.</p>
-            </div>
-          </article>
-          <article class="servicio reveal" data-delay="80">
-            <span class="servicio-num">02</span>
-            <div class="servicio-body">
-              <h3>Reformas integrales</h3>
-              <p>Transformamos cocinas, baños y ambientes completos. Nuestra especialidad: sacarle el máximo a lo que ya existe.</p>
-            </div>
-          </article>
-          <article class="servicio reveal" data-delay="160">
-            <span class="servicio-num">03</span>
-            <div class="servicio-body">
-              <h3>Diseño de interiores</h3>
-              <p>Distribución, materialidad, iluminación y selección de terminaciones. El alma del espacio está en los detalles.</p>
-            </div>
-          </article>
-          <article class="servicio reveal" data-delay="240">
-            <span class="servicio-num">04</span>
-            <div class="servicio-body">
-              <h3>Mobiliario a medida</h3>
-              <p>Diseñamos y fabricamos muebles pensados para tu espacio exacto. Nada sobra, nada falta.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROCESO ============ -->
-    <section class="proceso" id="proceso">
-      <div class="container">
-        <header class="section-head section-head-center reveal">
-          <p class="section-tag">— Cómo trabajamos</p>
-          <h2 class="section-title">Cuatro etapas, <em>cero sorpresas</em>.</h2>
-        </header>
-
-        <div class="proceso-track">
-          <div class="proceso-step reveal">
-            <span class="proceso-num">01</span>
-            <h3>Escuchamos</h3>
-            <p>Visitamos el lugar, entendemos cómo vivís y cuál es tu presupuesto real. Sin esto, no hay buen proyecto.</p>
-          </div>
-          <div class="proceso-line" aria-hidden="true"></div>
-          <div class="proceso-step reveal" data-delay="100">
-            <span class="proceso-num">02</span>
-            <h3>Proponemos</h3>
-            <p>Te presentamos el anteproyecto con planos, render y un presupuesto cerrado. Ajustamos hasta que te enamore.</p>
-          </div>
-          <div class="proceso-line" aria-hidden="true"></div>
-          <div class="proceso-step reveal" data-delay="200">
-            <span class="proceso-num">03</span>
-            <h3>Construimos</h3>
-            <p>Coordinamos cada gremio y dirigimos la obra. Reportes semanales para que sepas exactamente cómo avanza todo.</p>
-          </div>
-          <div class="proceso-line" aria-hidden="true"></div>
-          <div class="proceso-step reveal" data-delay="300">
-            <span class="proceso-num">04</span>
-            <h3>Entregamos</h3>
-            <p>Tu espacio terminado, en fecha y en presupuesto. Y seguimos disponibles para lo que necesites después.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CTA BAND ============ -->
-    <section class="cta-band">
-      <div class="container">
-        <div class="cta-inner reveal">
-          <h2 class="cta-title">¿Tenés una obra en mente?</h2>
-          <p class="cta-sub">La primera visita y el presupuesto inicial no tienen costo.</p>
-          <a href="#contacto" class="btn btn-light">Conversemos →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACTO ============ -->
-    <section class="contacto" id="contacto">
-      <div class="container contacto-grid">
-        <div class="contacto-text reveal">
-          <p class="section-tag">— Contacto</p>
-          <h2 class="section-title">Empecemos por <em>tu idea</em>.</h2>
-          <p class="lead">
-            Contanos qué tenés en mente. Te respondemos en menos de 24 horas
-            para coordinar una primera visita sin compromiso.
-          </p>
-
-          <div class="contacto-details">
-            <div class="contacto-detail">
-              <span class="contacto-key">Estudio</span>
-              <p>Rambla Tomás Berreta<br/>Montevideo, Uruguay</p>
-            </div>
-            <div class="contacto-detail">
-              <span class="contacto-key">Correo</span>
-              <p><a href="mailto:hola@estudioterreno.uy">hola@estudioterreno.uy</a></p>
-            </div>
-            <div class="contacto-detail">
-              <span class="contacto-key">WhatsApp</span>
-              <p><a href="#" target="_blank" rel="noopener">+598 9X XXX XXX</a></p>
-            </div>
-            <div class="contacto-detail">
-              <span class="contacto-key">Redes</span>
-              <p><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
-            </div>
-          </div>
-        </div>
-
-        <form class="contacto-form reveal" id="contactForm" data-delay="150" novalidate>
-          <div class="form-field">
-            <label for="f-nombre">Nombre <span class="req">*</span></label>
-            <input type="text" id="f-nombre" name="nombre" required autocomplete="name" />
-            <span class="field-err">Por favor, ingresá tu nombre.</span>
-          </div>
-          <div class="form-row">
-            <div class="form-field">
-              <label for="f-email">Email <span class="req">*</span></label>
-              <input type="email" id="f-email" name="email" required autocomplete="email" />
-              <span class="field-err">Email inválido.</span>
-            </div>
-            <div class="form-field">
-              <label for="f-tel">Teléfono</label>
-              <input type="tel" id="f-tel" name="telefono" autocomplete="tel" />
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="f-tipo">Tipo de proyecto <span class="req">*</span></label>
-            <select id="f-tipo" name="tipo" required>
-              <option value="">Elegí una opción</option>
-              <option value="Obra nueva">Obra nueva</option>
-              <option value="Reforma">Reforma integral</option>
-              <option value="Interiores">Diseño de interiores</option>
-              <option value="Mobiliario">Mobiliario a medida</option>
-              <option value="Otro">Otro</option>
-            </select>
-            <span class="field-err">Indicá el tipo de proyecto.</span>
-          </div>
-          <div class="form-field">
-            <label for="f-mensaje">Contanos tu idea <span class="req">*</span></label>
-            <textarea id="f-mensaje" name="mensaje" rows="4" required></textarea>
-            <span class="field-err">Una breve descripción nos ayuda a prepararnos.</span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Enviar consulta →</button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <span class="footer-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
-            <rect x="2" y="2" width="36" height="36" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M2 26 L20 14 L38 26" stroke="currentColor" stroke-width="1.2"/>
-            <path d="M20 14 L20 2" stroke="currentColor" stroke-width="1.2"/>
-          </svg>
-        </span>
-        <p class="footer-name">Estudio Terreno</p>
-        <p class="footer-tagline">Arquitectura &amp; Diseño · Montevideo</p>
-      </div>
-
-      <nav class="footer-nav" aria-label="Pie">
-        <div>
-          <h4>Navegación</h4>
-          <ul>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#estudio">Estudio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#proceso">Proceso</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="mailto:hola@estudioterreno.uy">hola@estudioterreno.uy</a></li>
-            <li>Montevideo, Uruguay</li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="footer-end">
-        <p>© <span id="year"></span> Estudio Terreno.<br/>Todos los derechos reservados.</p>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-head">
+      <h1 class="hero-h1">
+        <span class="reveal-line"><span>Arquitectura</span></span>
+        <span class="reveal-line"><span>de lo esencial.</span></span>
+      </h1>
+      <div class="hero-aside">
+        <p class="reveal" data-delay="300">Estudio de arquitectura con base en Montevideo. Diseñamos casas, reformas y espacios comerciales con una premisa: que sobre el espacio, no las cosas.</p>
+        <a href="#contacto" class="link-arrow reveal" data-delay="400">Iniciar un proyecto <span aria-hidden="true">↗</span></a>
       </div>
     </div>
 
-    <div class="footer-bar">
-      <div class="container">
-        <p class="footer-demo"><strong>Demo</strong> · Sitio de muestra. Estudio Terreno es un estudio ficticio creado para demostración.</p>
+    <div class="hero-img reveal" data-delay="200">
+      <div class="ph ph-16x9">
+        <span class="ph-meta"><span>Casa Pinar</span><span>Maldonado, 2024</span></span>
       </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <div class="hero-foot">
+      <span>Est. 2016</span>
+      <span>Montevideo · Uruguay</span>
+      <span class="hero-foot-scroll">Scroll ↓</span>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="proyectos" id="proyectos">
+    <div class="sec-label"><span>01</span><span>Proyectos seleccionados</span></div>
+
+    <div class="proj-list">
+
+      <article class="proj reveal">
+        <a href="#" class="proj-a">
+          <div class="proj-img"><div class="ph ph-4x3"><span class="ph-meta"><span>Casa Pinar</span><span>Obra nueva</span></span></div></div>
+          <div class="proj-row">
+            <span class="proj-n">01</span>
+            <h3 class="proj-t">Casa Pinar</h3>
+            <span class="proj-cat">Obra nueva</span>
+            <span class="proj-y">2024</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="proj reveal">
+        <a href="#" class="proj-a">
+          <div class="proj-img"><div class="ph ph-4x3"><span class="ph-meta"><span>Reforma Solymar</span><span>Reforma integral</span></span></div></div>
+          <div class="proj-row">
+            <span class="proj-n">02</span>
+            <h3 class="proj-t">Reforma Solymar</h3>
+            <span class="proj-cat">Reforma integral</span>
+            <span class="proj-y">2024</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="proj reveal">
+        <a href="#" class="proj-a">
+          <div class="proj-img"><div class="ph ph-4x3"><span class="ph-meta"><span>Loft Ciudad Vieja</span><span>Interiores</span></span></div></div>
+          <div class="proj-row">
+            <span class="proj-n">03</span>
+            <h3 class="proj-t">Loft Ciudad Vieja</h3>
+            <span class="proj-cat">Interiorismo</span>
+            <span class="proj-y">2023</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="proj reveal">
+        <a href="#" class="proj-a">
+          <div class="proj-img"><div class="ph ph-4x3"><span class="ph-meta"><span>Local Pocitos</span><span>Comercial</span></span></div></div>
+          <div class="proj-row">
+            <span class="proj-n">04</span>
+            <h3 class="proj-t">Local Pocitos</h3>
+            <span class="proj-cat">Comercial</span>
+            <span class="proj-y">2023</span>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ESTUDIO -->
+  <section class="estudio" id="estudio">
+    <div class="sec-label sec-label-inv"><span>02</span><span>El estudio</span></div>
+    <div class="est-grid">
+      <p class="est-big reveal">Creemos en una arquitectura que envejece bien. Sin gestos vacíos. Materiales honestos, luz medida, y espacios pensados para cómo se vive realmente.</p>
+      <div class="est-cols">
+        <div class="est-col reveal">
+          <h4>Cómo trabajamos</h4>
+          <p>De principio a fin: anteproyecto, proyecto ejecutivo, gestión de permisos y dirección de obra. Una sola interlocución para todo el proceso.</p>
+        </div>
+        <div class="est-col reveal" data-delay="100">
+          <h4>Con quién</h4>
+          <p>Familias que construyen su casa, inversores que reciclan padrones, comercios que necesitan identidad espacial. Pocos proyectos por año, cada uno con dedicación completa.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="est-stats">
+      <div class="est-stat reveal"><span class="est-stat-n">48</span><span class="est-stat-l">Proyectos<br/>entregados</span></div>
+      <div class="est-stat reveal" data-delay="80"><span class="est-stat-n">09</span><span class="est-stat-l">Años de<br/>trayectoria</span></div>
+      <div class="est-stat reveal" data-delay="160"><span class="est-stat-n">02</span><span class="est-stat-l">Premios<br/>regionales</span></div>
+      <div class="est-stat reveal" data-delay="240"><span class="est-stat-n">100<span class="pct">%</span></span><span class="est-stat-l">Dirección<br/>propia de obra</span></div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios" id="servicios">
+    <div class="sec-label"><span>03</span><span>Servicios</span></div>
+    <div class="serv-list">
+      <div class="serv reveal">
+        <span class="serv-n">A</span>
+        <h3>Obra nueva</h3>
+        <p>Diseño y construcción de viviendas desde cero. Proyecto completo, permisos y entrega llave en mano.</p>
+      </div>
+      <div class="serv reveal" data-delay="80">
+        <span class="serv-n">B</span>
+        <h3>Reformas</h3>
+        <p>Intervención de espacios existentes. Cocinas, baños, ampliaciones y reciclajes integrales.</p>
+      </div>
+      <div class="serv reveal" data-delay="160">
+        <span class="serv-n">C</span>
+        <h3>Interiorismo</h3>
+        <p>Distribución, materialidad e iluminación. El proyecto que no se ve en los planos pero se siente al entrar.</p>
+      </div>
+      <div class="serv reveal" data-delay="240">
+        <span class="serv-n">D</span>
+        <h3>Dirección de obra</h3>
+        <p>Coordinamos cada gremio y controlamos plazos, costos y calidad. Reportes claros, sin sorpresas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="cont-grid">
+      <div class="cont-left">
+        <div class="sec-label sec-label-inv"><span>04</span><span>Contacto</span></div>
+        <h2 class="cont-h2 reveal">Hablemos de<br/>tu proyecto.</h2>
+        <p class="cont-sub reveal" data-delay="100">Primera visita y estimación inicial sin costo. Respondemos en menos de 24 horas.</p>
+
+        <div class="cont-info reveal" data-delay="200">
+          <div><span class="cont-k">Correo</span><a href="mailto:hola@obra.uy">hola@obra.uy</a></div>
+          <div><span class="cont-k">Whatsapp</span><a href="#">+598 9X XXX XXX</a></div>
+          <div><span class="cont-k">Estudio</span><span>Montevideo, Uruguay</span></div>
+          <div><span class="cont-k">Redes</span><a href="#">Instagram ↗</a></div>
+        </div>
+      </div>
+
+      <form class="cont-form reveal" id="contactForm" data-delay="150" novalidate>
+        <div class="fld">
+          <input type="text" id="f-n" name="nombre" required placeholder=" " />
+          <label for="f-n">Nombre</label>
+          <span class="err">Ingresá tu nombre</span>
+        </div>
+        <div class="fld">
+          <input type="email" id="f-e" name="email" required placeholder=" " />
+          <label for="f-e">Email</label>
+          <span class="err">Email inválido</span>
+        </div>
+        <div class="fld">
+          <select id="f-t" name="tipo" required>
+            <option value=""></option>
+            <option>Obra nueva</option>
+            <option>Reforma</option>
+            <option>Interiorismo</option>
+            <option>Dirección de obra</option>
+          </select>
+          <label for="f-t" class="lbl-static">Tipo de proyecto</label>
+          <span class="err">Elegí una opción</span>
+        </div>
+        <div class="fld">
+          <textarea id="f-m" name="mensaje" rows="3" required placeholder=" "></textarea>
+          <label for="f-m">Contanos tu idea</label>
+          <span class="err">Contanos brevemente</span>
+        </div>
+        <button type="submit" class="btn-send">Enviar consulta <span aria-hidden="true">↗</span></button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr-top">
+    <span class="ftr-logo">OBRA<span>®</span></span>
+    <p class="ftr-tag">Estudio de Arquitectura<br/>Montevideo · Uruguay</p>
+  </div>
+  <div class="ftr-bot">
+    <span>© <span id="year"></span> OBRA Estudio</span>
+    <span class="ftr-demo">DEMO — Estudio ficticio, sitio de muestra</span>
+    <a href="#top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
